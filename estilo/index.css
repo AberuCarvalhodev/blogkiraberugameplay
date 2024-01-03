@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fontes/RubikScribble-Regular.ttf');
+}
+@font-face {
+    font-family: 'smile';
+    src: url('../fontes/The\ Smile.otf');
+}
+@font-face {
+    font-family: 'robot';
+    src: url('../fontes/RobotoCondensed-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fontes/Ubuntu-Medium.ttf');
+}
+
+
+:root{
+    --cor01: #5f236b;
+    --cor02: #f5eb6d; 
+    --cor03: #E6B412;
+    --cor04: #ed8554;
+
+    --font1: 'ubuntu', Arial, Helvetica, sans-serif;
+    --font2: 'robot', Arial, Helvetica, sans-serif;
+    --font-manu: 'rubik', Arial, Helvetica, sans-serif;
+    --font-ludica: 'smile', Arial, Helvetica, sans-serif;
+}
+
+body main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#l-esquerdo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-esquerdo{
+    width: 80%;
+    background-color:#84558d90;
+    color: var(--cor03);
+    font-family: var(--font2);
+    border-radius: 10px;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#l-direito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-direito{
+    width: 80%;
+    background-color: #84558d90;
+    color:var(--cor03);
+    font-family: 'ubuntu';
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-icon{
+    width: 75px;
+    height: 60px;
+    padding: 20px 15px;
+}
+
+
