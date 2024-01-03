@@ -94,3 +94,35 @@ body main{
 }
 
 
+@media only screen and (max-width: 950px){
+    #l-direito{
+        width: 85%;
+        padding: auto;
+    }
+    #l-esquerdo{
+        width: 85%;
+        padding: auto;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    body, main{
+        flex-direction: column;
+    }
+    #l-direito{
+        width: 100%;
+        padding: auto;
+    }
+    #l-esquerdo{
+        width: 100%;
+        padding: auto;
+    }
+    .card-direito{
+        width: 90%;
+        padding: 5px;
+    }
+    .card-esquerdo{
+        width: 90%;
+        padding: 5px;
+    }
+}
