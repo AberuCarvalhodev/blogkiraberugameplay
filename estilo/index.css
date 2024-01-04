@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-*{
+body, main *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -54,6 +55,7 @@ body main{
 .card-esquerdo{
     width: 80%;
     background-color:#84558d90;
+    box-shadow: 0px 10px 40px #00000056;
     color: var(--cor03);
     font-family: var(--font2);
     border-radius: 10px;
@@ -76,6 +78,7 @@ body main{
 .card-direito{
     width: 80%;
     background-color: #84558d90;
+    box-shadow: 0px 10px 40px #00000056;
     color:var(--cor03);
     font-family: 'ubuntu';
     font-size: 1em;
@@ -94,7 +97,7 @@ body main{
 }
 
 
-@media only screen and (max-width: 950px){
+@media  (max-width: 950px){
     #l-direito{
         width: 85%;
         padding: auto;
@@ -105,12 +108,13 @@ body main{
     }
 }
 
-@media only screen and (max-width: 450px){
+@media(max-width: 350px){
     body, main{
         flex-direction: column;
     }
     #l-direito{
         width: 100%;
+    
         padding: auto;
     }
     #l-esquerdo{
@@ -119,10 +123,12 @@ body main{
     }
     .card-direito{
         width: 90%;
+        height: 300px;
         padding: 5px;
     }
     .card-esquerdo{
         width: 90%;
+        height: 300px;
         padding: 5px;
     }
 }
